@@ -1,5 +1,5 @@
 {
-  "name": "yjs",
+  "name": "yjs-amd",
   "version": "13.6.20",
   "description": "Shared Editing Library",
   "main": "./dist/yjs.amd.js",
@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yjs/yjs.git"
+    "url": "https://github.com/monogramdesign/yjs.git"
   },
   "keywords": [
     "Yjs",
