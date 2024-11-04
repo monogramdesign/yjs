@@ -103,4 +103,20 @@ export default [{
     commonjs()
   ],
   external: id => /^lib0\//.test(id)
+}, {
+  input: './src/index.js',
+  output: {
+    name: 'Y',
+    file: 'dist/yjs.amd.js',
+    format: 'amd',
+    sourcemap: true
+  },
+  plugins: [
+    nodeResolve({
+      browser: true, // Use browser-compatible versions of modules
+      extensions: ['.js', '.ts'],
+      preferBuiltins: false // Do not prefer Node.js built-ins
+    }),
+    commonjs()
+  ]
 }]
